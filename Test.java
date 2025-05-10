@@ -18,5 +18,14 @@ public class Test {
             System.out.println(e.getMessage());
         }
 
+        Stack<String> pilaCadenas = new StackArray<>(3);
+        System.out.println("\nprueba con pila de cadenas:");
+
+        pilaCadenas.push("uno");
+        pilaCadenas.push("dos");
+        pilaCadenas.push("tres");
+        System.out.println("pila actual: " + pilaCadenas);
+
+
     }
 }
