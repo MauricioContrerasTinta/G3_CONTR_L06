@@ -14,6 +14,10 @@ public class Application {
 
             try {
                 char tope = stack.pop();
-
+                    if (!coincide(tope, simbolo)) return false;
+                } catch (ExceptionIsEmpty e) {
+                    return false;
+                }
+            }
     }
 }
