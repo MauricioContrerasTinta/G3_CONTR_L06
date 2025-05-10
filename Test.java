@@ -11,5 +11,12 @@ public class Test {
         colaEnteros.enqueue(30);
 
         System.out.println("Cola de enteros: " + colaEnteros);
+
+        try {
+
+            System.out.println("Frente: " + colaEnteros.front());
+            System.out.println("Final: " + colaEnteros.back());
+        
+        }
     }
 }
