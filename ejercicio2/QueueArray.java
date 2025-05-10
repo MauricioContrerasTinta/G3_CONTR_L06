@@ -17,4 +17,14 @@ public class QueueArray<E> implements Queue<E> {
         this.ultimo = 0;
         this.tamaño = 0;
     }
+
+    public void enqueue(E elemento) {
+        if (tamaño == capacidad) {
+            System.out.println("Cola llena, no se puede insertar.");
+            return;
+        }
+        arreglo[ultimo] = elemento;
+        ultimo = (ultimo + 1) % capacidad;
+        tamaño++;
+    }
 }
