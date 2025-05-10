@@ -25,5 +25,13 @@ public class Test {
         } catch (ExceptionIsEmpty e) {
             System.out.println("Error: " + e.getMessage());
         }
+
+        Queue<String> colaCadenas = new QueueLink<>();
+
+        colaCadenas.enqueue("uno");
+        colaCadenas.enqueue("dos");
+        colaCadenas.enqueue("tres");
+
+        System.out.println("Cola de cadenas: " + colaCadenas);
     }
 }
