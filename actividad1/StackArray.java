@@ -38,4 +38,13 @@ public class StackArray<E> implements Stack<E> {
     public boolean isFull() {
         return tope == array.length - 1;
     }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = tope; i >= 0; i--) {
+            sb.append(array[i]);
+            if (i != 0) sb.append(" -> ");
+        }
+        return sb.toString();
+    }
 }
