@@ -21,7 +21,12 @@ public class PriorityQueueLinkSort<E, N extends Comparable<N>> implements Priori
     }
 
     public void enqueue(E x, N pr) {
-        EntryNode nuevo = new EntryNode(x, pr); 
-        Node<EntryNode> nodoNuevo = new Node<>(nuevo);
+        EntryNode nuevo = new EntryNode(x, pr);  //creamos el nuevo nodo con dato y prioridad
+        Node<EntryNode> nodoNuevo = new Node<>(nuevo);  //nodo con el nuevo EntryNode
+
+        if (this.isEmpty()) {
+            this.primero = nodoNuevo;
+            this.ultimo = nodoNuevo;
+        } 
     } 
 }
