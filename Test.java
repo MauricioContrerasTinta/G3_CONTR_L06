@@ -28,6 +28,13 @@ public class Test {
 
         pilaCadenas.push("cuatro");
 
-
+        try {
+            while (!pilaCadenas.isEmpty()) {
+                System.out.println("Pop: " + pilaCadenas.pop());
+            }
+            pilaCadenas.pop();
+        } catch (ExceptionIsEmpty e) {
+            System.out.println("Error: " + e.getMessage());
+        }
     }
 }
