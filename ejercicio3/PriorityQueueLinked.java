@@ -46,4 +46,11 @@ public class PriorityQueueLinked<E> implements PriorityQueue<E> {
         }
         throw new ExceptionIsEmpty("Cola de prioridad vacía");
     }
+
+    public boolean isEmpty() {
+        for (int i = 0; i < niveles; i++) {
+            if (!colas[i].isEmpty()) return false;
+        }
+        return true;
+    }
 }
