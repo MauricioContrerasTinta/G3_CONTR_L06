@@ -21,8 +21,9 @@ public class Test {
             System.out.println("Elemento eliminado: " + eliminado);
 
             System.out.println("Cola después de eliminar: " + colaEnteros);
-
-        
+            
+        } catch (ExceptionIsEmpty e) {
+            System.out.println("Error: " + e.getMessage());
         }
     }
 }
