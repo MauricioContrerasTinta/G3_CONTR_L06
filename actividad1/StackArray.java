@@ -16,4 +16,11 @@ public class StackArray<E> implements Stack<E> {
             System.out.println("Stack esta lleno " + x);
         }
     }
+
+    public E pop() throws ExceptionIsEmpty {
+        if (isEmpty()) {
+            throw new ExceptionIsEmpty("Stack is empty. Cannot pop.");
+        }
+        return array[tope--];
+    }
 }
