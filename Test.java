@@ -9,5 +9,7 @@ public class Test {
         colaEnteros.enqueue(10);
         colaEnteros.enqueue(20);
         colaEnteros.enqueue(30);
+
+        System.out.println("Cola de enteros: " + colaEnteros);
     }
 }
