@@ -52,4 +52,19 @@ public class QueueLink<E> implements Queue<E> {
     public boolean isEmpty() {
         return this.primero == null;
     }
+
+    public String toString() {
+        StringBuilder resultado = new StringBuilder();
+        Node<E> actual = this.primero;
+
+        while (actual != null) {
+            resultado.append(actual.getData());
+            if (actual.getNext() != null) {
+                resultado.append(" -> ");
+            }
+            actual = actual.getNext();
+        }
+
+        return resultado.toString();
+    }
 }
