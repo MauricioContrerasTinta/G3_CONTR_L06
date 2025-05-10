@@ -37,4 +37,11 @@ public class QueueArray<E> implements Queue<E> {
         tamaño--;
         return elemento;
     }
+
+    public E front() throws ExceptionIsEmpty {
+        if (isEmpty()) {
+            throw new ExceptionIsEmpty("Cola vacia");
+        }
+        return arreglo[primero];
+    }
 }
