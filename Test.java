@@ -12,5 +12,11 @@ public class Test {
         cola.enqueue("Reunión", 1);
 
         System.out.println(cola.toString());
+
+        try {
+            //prueba de front y back
+            System.out.println("Primero: " + cola.front());
+            System.out.println("Último: " + cola.back());
+        }
     }
 }
