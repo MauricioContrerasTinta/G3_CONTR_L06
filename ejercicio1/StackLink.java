@@ -39,4 +39,15 @@ public class StackLink<E> implements Stack<E> {
     public boolean isEmpty() {
         return cima == null;
     }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        Node<E> actual = cima;
+        while (actual != null) {
+            sb.append(actual.dato).append(" -> ");
+            actual = actual.siguiente;
+        }
+        sb.append("NULL");
+        return sb.toString();
+    }
 }
