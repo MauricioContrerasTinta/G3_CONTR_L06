@@ -57,6 +57,10 @@ public class PriorityQueueLinkSort<E, N extends Comparable<N>> implements Priori
 
         E dato = this.primero.getData().data;  // Guardamos el dato del frente
         this.primero = this.primero.getNext(); // Movemos el frente de la cola
-        
+
+        if (this.primero == null) {
+            this.ultimo = null;
+        }
+        return dato;
     }
 }
