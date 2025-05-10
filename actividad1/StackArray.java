@@ -26,7 +26,7 @@ public class StackArray<E> implements Stack<E> {
 
     public E top() throws ExceptionIsEmpty {
         if (isEmpty()) {
-            throw new ExceptionIsEmpty("Stack is empty. Cannot get top.");
+            throw new ExceptionIsEmpty("pila vacia");
         }
         return array[tope];
     }
