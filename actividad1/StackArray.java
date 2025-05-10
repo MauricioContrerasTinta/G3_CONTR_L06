@@ -30,4 +30,8 @@ public class StackArray<E> implements Stack<E> {
         }
         return array[tope];
     }
+
+    public boolean isEmpty() {
+        return tope == -1;
+    }
 }
