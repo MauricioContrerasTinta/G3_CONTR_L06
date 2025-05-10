@@ -48,4 +48,8 @@ public class QueueLink<E> implements Queue<E> {
         }
         return this.ultimo.getData();
     }
+
+    public boolean isEmpty() {
+        return this.primero == null;
+    }
 }
