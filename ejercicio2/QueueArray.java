@@ -52,4 +52,8 @@ public class QueueArray<E> implements Queue<E> {
         int pos = (ultimo - 1 + capacidad) % capacidad;
         return arreglo[pos];
     }
+
+    public boolean isEmpty() {
+        return tamaño == 0;
+    }
 }
