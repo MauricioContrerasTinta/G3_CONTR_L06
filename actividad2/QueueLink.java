@@ -41,4 +41,11 @@ public class QueueLink<E> implements Queue<E> {
         }
         return this.primero.getData();
     }
+
+    public E back() throws ExceptionIsEmpty {
+        if (this.isEmpty()) {
+            throw new ExceptionIsEmpty("Cola vacía. No hay último.");
+        }
+        return this.ultimo.getData();
+    }
 }
