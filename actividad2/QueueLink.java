@@ -18,5 +18,6 @@ public class QueueLink<E> implements Queue<E> {
         } else {
             this.ultimo.setNext(nuevo);
         }
+        this.ultimo = nuevo;
     }
 }
