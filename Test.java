@@ -16,6 +16,9 @@ public class Test {
 
             System.out.println("Frente: " + colaEnteros.front());
             System.out.println("Final: " + colaEnteros.back());
+
+            int eliminado = colaEnteros.dequeue();
+            System.out.println("Elemento eliminado: " + eliminado);
         
         }
     }
