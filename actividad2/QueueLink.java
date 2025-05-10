@@ -34,4 +34,11 @@ public class QueueLink<E> implements Queue<E> {
 
         return dato;
     }
+
+    public E front() throws ExceptionIsEmpty {
+        if (this.isEmpty()) {
+            throw new ExceptionIsEmpty("Cola vacia, no hay frente.");
+        }
+        return this.primero.getData();
+    }
 }
