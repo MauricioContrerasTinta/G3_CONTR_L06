@@ -7,5 +7,9 @@ public class Application {
 
     for (int i = 0; i < s.length(); i++) {
         char simbolo = s.charAt(i);
+
+        if (simbolo == '(' || simbolo == '[' || simbolo == '{') {
+            stack.push(simbolo);
+        } 
     }
 }
