@@ -20,4 +20,6 @@ public class Application {
                 }
             }
     }
+    return stack.isEmpty();
 }
+
