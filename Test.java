@@ -20,5 +20,12 @@ public class Test {
 
         System.out.println("Pila despues de pop: " + pilaEnteros);
 
+        Stack<String> pilaCadenas = new StackLink<>();
+        pilaCadenas.push("uno");
+        pilaCadenas.push("dos");
+        pilaCadenas.push("tres");
+
+        System.out.println("Pila de cadenas: " + pilaCadenas);
+
     }
 }
