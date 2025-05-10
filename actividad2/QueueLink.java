@@ -26,7 +26,12 @@ public class QueueLink<E> implements Queue<E> {
             throw new ExceptionIsEmpty("Cola vacia, no se puede eliminar.");
         }
         E dato = this.primero.getData();
-        this.primero = this.primero.getNext();    
+        this.primero = this.primero.getNext();
+        
+        if (this.primero == null) {
+            this.ultimo = null;
+        }
 
+        return dato;
     }
 }
