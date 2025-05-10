@@ -12,6 +12,6 @@ public class QueueLink<E> implements Queue<E> {
     }
 
     public void enqueue(E elemento) {
-    
+        Node<E> nuevo = new Node<>(elemento);
     }
 }
