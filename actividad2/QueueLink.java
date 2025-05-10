@@ -10,5 +10,8 @@ public class QueueLink<E> implements Queue<E> {
         this.primero = null;
         this.ultimo = null;
     }
+
+    public void enqueue(E elemento) {
     
+    }
 }
