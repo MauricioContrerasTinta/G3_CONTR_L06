@@ -53,4 +53,12 @@ public class PriorityQueueLinked<E> implements PriorityQueue<E> {
         }
         return true;
     }
+
+    public String toString() {
+        String resultado = "";
+        for (int i = 0; i < niveles; i++) {
+            resultado += "Prioridad " + i + ": " + colas[i].toString() + "\n";
+        }
+        return resultado;
+    }
 }
