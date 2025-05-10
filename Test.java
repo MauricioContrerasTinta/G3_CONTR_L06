@@ -17,6 +17,12 @@ public class Test {
             //prueba de front y back
             System.out.println("Primero: " + cola.front());
             System.out.println("Último: " + cola.back());
+            //prueba de dequeue
+            System.out.println("Eliminado: " + cola.dequeue());
+            System.out.println("Cola luego de eliminar:");
+            System.out.println(cola.toString());
+        } catch (ExceptionIsEmpty e) {
+            System.out.println("Error: " + e.getMessage());
         }
     }
 }
