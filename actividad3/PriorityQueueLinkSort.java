@@ -27,6 +27,8 @@ public class PriorityQueueLinkSort<E, N extends Comparable<N>> implements Priori
         if (this.isEmpty()) {
             this.primero = nodoNuevo;
             this.ultimo = nodoNuevo;
-        } 
+        } else {
+            Node<EntryNode> actual = this.primero;
+            Node<EntryNode> anterior = null;
     } 
 }
