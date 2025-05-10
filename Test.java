@@ -19,6 +19,9 @@ public class Test {
 
             int eliminado = colaEnteros.dequeue();
             System.out.println("Elemento eliminado: " + eliminado);
+
+            System.out.println("Cola después de eliminar: " + colaEnteros);
+
         
         }
     }
