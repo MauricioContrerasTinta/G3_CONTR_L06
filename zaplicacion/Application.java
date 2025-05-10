@@ -12,5 +12,8 @@ public class Application {
         else if (simbolo == ')' || simbolo == ']' || simbolo == '}') {
             if (stack.isEmpty()) return false;
 
+            try {
+                char tope = stack.pop();
+
     }
 }
