@@ -35,4 +35,8 @@ public class StackLink<E> implements Stack<E> {
         if (isEmpty()) throw new ExceptionIsEmpty("La pila está vacía");
         return cima.dato;
     }
+
+    public boolean isEmpty() {
+        return cima == null;
+    }
 }
