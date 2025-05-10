@@ -63,4 +63,11 @@ public class PriorityQueueLinkSort<E, N extends Comparable<N>> implements Priori
         }
         return dato;
     }
+
+    public E front() throws ExceptionIsEmpty {
+        if (this.isEmpty()) {
+            throw new ExceptionIsEmpty("Cola vacía. No hay frente.");
+        }
+        return this.primero.getData().data;
+    }
 }
