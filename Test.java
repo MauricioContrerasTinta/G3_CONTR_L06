@@ -26,6 +26,8 @@ public class Test {
         pilaCadenas.push("tres");
         System.out.println("pila actual: " + pilaCadenas);
 
+        pilaCadenas.push("cuatro");
+
 
     }
 }
