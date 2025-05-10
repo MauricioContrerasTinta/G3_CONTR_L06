@@ -27,4 +27,14 @@ public class QueueArray<E> implements Queue<E> {
         ultimo = (ultimo + 1) % capacidad;
         tamaño++;
     }
+
+    public E dequeue() throws ExceptionIsEmpty {
+        if (isEmpty()) {
+            throw new ExceptionIsEmpty("Cola vacía. No se puede eliminar.");
+        }
+        E elemento = arreglo[primero];
+        primero = (primero + 1) % capacidad;
+        tamaño--;
+        return elemento;
+    }
 }
