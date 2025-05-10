@@ -56,4 +56,18 @@ public class QueueArray<E> implements Queue<E> {
     public boolean isEmpty() {
         return tamaño == 0;
     }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = 0; i < tamaño; i++) {
+            int indice = (primero + i) % capacidad;
+            sb.append(arreglo[indice]);
+            if (i < tamaño - 1) {
+                sb.append(", ");
+            }
+        }
+        sb.append("]");
+        return sb.toString();
+    }
 }
