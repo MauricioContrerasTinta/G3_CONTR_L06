@@ -48,5 +48,15 @@ public class PriorityQueueLinkSort<E, N extends Comparable<N>> implements Priori
                 this.ultimo = nodoNuevo;
             }
         }
-    } 
+    }
+    
+    public E dequeue() throws ExceptionIsEmpty {
+        if (this.isEmpty()) {
+            throw new ExceptionIsEmpty("no se puede eliminar de una cola vacía");
+        }
+
+        E dato = this.primero.getData().data;  // Guardamos el dato del frente
+        this.primero = this.primero.getNext(); // Movemos el frente de la cola
+        
+    }
 }
