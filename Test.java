@@ -9,5 +9,7 @@ public class Test {
         colaPrioridad.enqueue(10, 2);
         colaPrioridad.enqueue(20, 1); 
         colaPrioridad.enqueue(30, 3);
+
+        System.out.println("Cola de prioridad: " + colaPrioridad); 
     }
 }
