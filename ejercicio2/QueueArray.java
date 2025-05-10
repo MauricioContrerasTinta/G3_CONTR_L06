@@ -44,4 +44,12 @@ public class QueueArray<E> implements Queue<E> {
         }
         return arreglo[primero];
     }
+
+    public E back() throws ExceptionIsEmpty {
+        if (isEmpty()) {
+            throw new ExceptionIsEmpty("Cola vacía.");
+        }
+        int pos = (ultimo - 1 + capacidad) % capacidad;
+        return arreglo[pos];
+    }
 }
