@@ -20,4 +20,10 @@ public class QueueLink<E> implements Queue<E> {
         }
         this.ultimo = nuevo;
     }
+
+    public E dequeue() throws ExceptionIsEmpty {
+        if (this.isEmpty()) {
+            throw new ExceptionIsEmpty("Cola vacia, no se puede eliminar.");
+        }
+    }
 }
