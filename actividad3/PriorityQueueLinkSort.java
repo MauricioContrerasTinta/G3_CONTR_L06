@@ -13,5 +13,10 @@ public class PriorityQueueLinkSort<E, N extends Comparable<N>> implements Priori
     }
 
     private Node<EntryNode> primero;
-    private Node<EntryNode> ultimo; 
+    private Node<EntryNode> ultimo;
+    
+    public PriorityQueueLinkSort() {
+        this.primero = null;
+        this.ultimo = null;
+    }
 }
