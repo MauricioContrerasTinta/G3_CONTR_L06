@@ -77,4 +77,9 @@ public class PriorityQueueLinkSort<E, N extends Comparable<N>> implements Priori
         }
         return this.ultimo.getData().data;
     }
+
+    public boolean isEmpty() {
+        return this.primero == null;
+    }
+
 }
