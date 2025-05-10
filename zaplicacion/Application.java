@@ -9,6 +9,8 @@ public class Application {
         if (simbolo == '(' || simbolo == '[' || simbolo == '{') {
             stack.push(simbolo);
         }
+        else if (simbolo == ')' || simbolo == ']' || simbolo == '}') {
+            if (stack.isEmpty()) return false;
 
     }
 }
