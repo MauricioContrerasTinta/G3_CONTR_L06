@@ -10,6 +10,22 @@ public class Test {
         colaPrioridad.enqueue(20, 1); 
         colaPrioridad.enqueue(30, 3);
 
-        System.out.println("Cola de prioridad: " + colaPrioridad); 
+        System.out.println("Cola de prioridad: " + colaPrioridad);
+        
+        try {
+  
+            System.out.println("Frente: " + colaPrioridad.front()); 
+            System.out.println("Final: " + colaPrioridad.back()); 
+
+
+            int eliminado = colaPrioridad.dequeue();
+            System.out.println("Elemento eliminado: " + eliminado); 
+
+
+            System.out.println("Cola después de eliminar: " + colaPrioridad); 
+
+        } catch (ExceptionIsEmpty e) {
+            System.out.println("Error: " + e.getMessage());
+        }
     }
 }
