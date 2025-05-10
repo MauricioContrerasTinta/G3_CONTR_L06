@@ -14,4 +14,9 @@ public class PriorityQueueLinked<E> implements PriorityQueue<E> {
             this.colas[i] = new QueueLink<E>(); //se inicializa cada cola como una lista enlazada
         }
     }
+
+    public void enqueue(E elemento, int prioridad) {
+        if (prioridad < 0 || prioridad >= niveles) return;
+        colas[prioridad].enqueue(elemento);
+    }
 }
