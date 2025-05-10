@@ -11,6 +11,6 @@ class Node<E> {
     }
 }
 
-public class StackLink {
-    
+public class StackLink<E> implements Stack<E> {
+    private Node<E> cima;
 }
