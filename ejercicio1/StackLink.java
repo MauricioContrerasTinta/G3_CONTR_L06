@@ -23,4 +23,11 @@ public class StackLink<E> implements Stack<E> {
         nuevo.siguiente = cima;
         cima = nuevo;
     }
+
+    public E pop() throws ExceptionIsEmpty {
+        if (isEmpty()) throw new ExceptionIsEmpty("La pila está vacía");
+        E dato = cima.dato;
+        cima = cima.siguiente;
+        return dato;
+    }
 }
