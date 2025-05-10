@@ -20,6 +20,13 @@ public class Application {
                 }
             }
     }
-    return stack.isEmpty();
+        return stack.isEmpty();
+    }
+
+    private static boolean coincide(char apertura, char cierre) {
+        return (apertura == '(' && cierre == ')') ||
+               (apertura == '[' && cierre == ']') ||
+               (apertura == '{' && cierre == '}');
+    }
 }
 
