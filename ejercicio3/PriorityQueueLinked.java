@@ -19,4 +19,13 @@ public class PriorityQueueLinked<E> implements PriorityQueue<E> {
         if (prioridad < 0 || prioridad >= niveles) return;
         colas[prioridad].enqueue(elemento);
     }
+
+    public E dequeue() throws ExceptionIsEmpty {
+        for (int i = 0; i < niveles; i++) {
+            if (!colas[i].isEmpty()) {
+                return colas[i].dequeue();
+            }
+        }
+        throw new ExceptionIsEmpty("Cola de prioridad vacía");
+    }
 }
