@@ -13,4 +13,8 @@ class Node<E> {
 
 public class StackLink<E> implements Stack<E> {
     private Node<E> cima;
+
+    public StackLink() {
+        this.cima = null;
+    }
 }
