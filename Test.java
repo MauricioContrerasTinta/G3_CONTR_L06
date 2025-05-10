@@ -22,8 +22,8 @@ public class Test {
         System.out.println("Cola final: " + colaEnteros);
 
         Queue<String> colaStrings = new QueueArray<>(3);
-        colaStrings.enqueue("Hola");
-        colaStrings.enqueue("Mundo");
+        colaStrings.enqueue("uno");
+        colaStrings.enqueue("dos");
 
         System.out.println("Cola de Strings: " + colaStrings);
     }
