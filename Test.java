@@ -12,8 +12,8 @@ public class Test {
         System.out.println("Pila de enteros: " + pilaEnteros);
 
         try {
-            System.out.println("Elemento tope: " + pilaEnteros.top());  // Debe mostrar 30
-            System.out.println("Elemento desapilado: " + pilaEnteros.pop()); // Elimina 30
+            System.out.println("Elemento tope: " + pilaEnteros.top());  //debe mostrar 30
+            System.out.println("Elemento desapilado: " + pilaEnteros.pop()); //elimina 30
         } catch (ExceptionIsEmpty e) {
             System.out.println(e.getMessage());
         }
@@ -27,5 +27,13 @@ public class Test {
 
         System.out.println("Pila de cadenas: " + pilaCadenas);
 
+        try {
+            while (!pilaCadenas.isEmpty()) {
+                System.out.println("Desapilando: " + pilaCadenas.pop());
+            }
+            pilaCadenas.pop(); //forzamos la excepción
+        } catch (ExceptionIsEmpty e) {
+            System.out.println("Error: " + e.getMessage());
+        }
     }
 }
