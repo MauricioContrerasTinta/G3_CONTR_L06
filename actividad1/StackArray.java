@@ -8,4 +8,12 @@ public class StackArray<E> implements Stack<E> {
         this.array = (E[]) new Object[n];
         this.tope = -1;
     }
+
+    public void push(E x){
+        if (!isFull()) {
+            array[++tope] = x;
+        } else {
+            System.out.println("Stack esta lleno " + x);
+        }
+    }
 }
