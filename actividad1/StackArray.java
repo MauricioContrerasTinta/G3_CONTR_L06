@@ -23,4 +23,11 @@ public class StackArray<E> implements Stack<E> {
         }
         return array[tope--];
     }
+
+    public E top() throws ExceptionIsEmpty {
+        if (isEmpty()) {
+            throw new ExceptionIsEmpty("Stack is empty. Cannot get top.");
+        }
+        return array[tope];
+    }
 }
